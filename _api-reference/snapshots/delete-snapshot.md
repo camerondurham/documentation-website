@@ -9,7 +9,9 @@ nav_order: 7
 **Introduced 1.0**
 {: .label .label-purple }
 
-Deletes a snapshot from a repository.
+Deletes a snapshot from a repository. 
+
+If you attempt to delete an in progress snapshot, it will be aborted and removed from the repository. This is useful if you need to cancel an accidentally created snapshot or a snapshot causing impact to your cluster.
 
 * To learn more about snapshots, see [Snapshots]({{site.url}}{{site.baseurl}}/opensearch/snapshots/index).
 
